@@ -3,6 +3,7 @@ import { Carousel } from 'antd';
 import img1 from '../../assets/images/fur.jpg';
 import img2 from '../../assets/images/fur2.jpg';
 import img3 from '../../assets/images/fur3.jpg';
+import { Link } from 'react-router-dom';
 
 const contentStyle = {
 //   height: '500px',
@@ -28,7 +29,7 @@ const CarouselComponent = () => {
       image:img1,
       heading:"Welcome to Crimp",
       buttonName:'About us',
-      bath:''
+      bath:'/about'
     },
     {
       id:2,
@@ -36,7 +37,7 @@ const CarouselComponent = () => {
       image:img2,
       heading:"Explore our Work",
       buttonName:'Go to gallery',
-      bath:''
+      bath:'/gallery'
     },
     {
       id:3,
@@ -44,7 +45,7 @@ const CarouselComponent = () => {
       image:img3,
       heading:"Keep Touch with us",
       buttonName:'Contact Us',
-      bath:''
+      bath:'/contact'
 
     }
   ]
@@ -65,9 +66,8 @@ const CarouselComponent = () => {
           </div>
           
           <div>
-          <button className='btn btn-primary'>
-            {data.buttonName}
-          </button>
+     
+          <Link className='btn btn-primary' to={data.bath}>{data.buttonName}</Link>
 
           </div>
           </div>

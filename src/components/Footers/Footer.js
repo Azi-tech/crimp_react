@@ -6,7 +6,7 @@ import { CopyrightOutlined, EnvironmentOutlined, MailOutlined, PhoneOutlined, Ph
 const Footer = () => {
     return(
   
-    <footer>
+    <footer className='footerStyle'>
       <div class="main-content">
         <div class="left box">
           <h2>About us</h2>

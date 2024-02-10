@@ -7,6 +7,8 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from './components/Footers/Footer';
+import Gallery from './Pages/Gallery';
+import ContactUs from './Pages/ContactUs';
 
 function App() {
   
@@ -17,6 +19,8 @@ function App() {
      <Route path="/" element={<Home />} />
      <Route path="/home" element={<Home />} />
      <Route path="/about" element={<About />} />
+     <Route path="/gallery" element={<Gallery />} />
+     <Route path="/contact" element={<ContactUs />} />
       {/* <Route path="/admin" render={(props) => <AdminLayout {...props} />} /> */}
       {/* <Route path="/user" render={(props) => <User {...props} />} /> */}
       {/* <Redirect from="/" to="/user/home" /> */}
