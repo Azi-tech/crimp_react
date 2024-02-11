@@ -3,6 +3,7 @@ import ContactImg from '../assets/images/handshake.jpg'
 import PageHeader from '../components/Contents/PageHeader';
 import '../StyleSheets/Contact.css'
 import { Button, Checkbox, Form, Input } from 'antd';
+import { useEffect, useState } from 'react';
 const onFinish = (values) => {
     console.log('Success:', values);
 };
@@ -10,26 +11,39 @@ const onFinishFailed = (errorInfo) => {
     console.log('Failed:', errorInfo);
 };
 const ContactUs = () => {
+    const [width, setWidth] = useState(window.innerWidth);
+
+    function handleWindowSizeChange() {
+        setWidth(window.innerWidth);
+    }
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
+    }, []);
+    
+    const isMobileDevice = width <= 768;
     return (
         <div>
             <PageHeader page="Contact Us" image={ContactImg} />
             <div class="container mt-4 mb-4 shadow p-3 mb-5 bg-body rounded">
                 <div class=" container row">
-                    <div className="col-md-4 text-center mt-4 border-end border-3">
+                    <div className={`col-md-4 text-center mt-4 pb-4 ${isMobileDevice ? 'border-bottom' : 'border-end'} border-3`}>
                         <div>
                             <EnvironmentFilled style={{ fontSize: '25px', color: '#08c' }}/>
                             
                             <h5 class="text-primary">Address</h5>
-                            <div class="text-one">Melapalayam</div>
-                            <div class="text-two">Tirunelveli</div>
+                            <div class="text-one">7,Ambai Road Melapalayam</div>
+                            <div class="text-two">Tirunelveli - 627005</div>
                         </div>
                         <div class="mt-4">
                             <PhoneFilled style={{ fontSize: '25px', color: '#08c' }} />
                             {/* <PhoneOutlined /> */}
                             {/* <div class="topic">Phone</div> */}
                             <h5 class="text-primary">Phone</h5>
-                            <div class="text-one">+(91) 805 6707 579</div>
-                            <div class="text-two">+(91) 805 6707 579</div>
+                            <div class="text-one">+(91) 744 8824 222</div>
+                            <div class="text-two">+(91) 744 8824 222</div>
                         </div>
                         <div class="mt-4">
                             <MailFilled style={{ fontSize: '25px', color: '#08c' }}/>
