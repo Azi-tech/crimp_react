@@ -54,9 +54,9 @@ const isMobileDevice = width <= 768;
         <img src={logo} height={60} />
       </div>
       <ul className={`nav-links ${isMobile && isMobileDevice? 'mobile shadow-lg p-3 mb-5 bg-body rounded' : ''}`}>
-        {menuList.map((data) => {
+        {menuList.map((data,index) => {
           return (
-            <li>
+            <li key={index}>
               <Link to={data.path} onClick={()=>{ddd()} }>{data.name}</Link>
               {isMobileDevice ? <hr /> : null}
             </li>

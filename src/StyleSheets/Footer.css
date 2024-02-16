@@ -97,7 +97,7 @@ footer{
   background: #f12020;
 }
 .center .content .text{
-  font-size: 1.0625rem;
+  /* font-size: 1.0625rem; */
   font-weight: 500;
   padding-left: 10px;
 }

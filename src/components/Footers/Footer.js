@@ -3,6 +3,7 @@ import Icon from '@ant-design/icons/lib/components/Icon';
 import '../../StyleSheets/Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { CopyrightOutlined, EnvironmentOutlined, MailOutlined, PhoneOutlined, PhoneTwoTone } from '@ant-design/icons';
+import { Flex } from 'antd';
 const Footer = () => {
     return(
   
@@ -28,13 +29,14 @@ const Footer = () => {
         <div class="center box">
           <h2>Address</h2>
           <div class="content">
-            <div class="place">
-              <span class="fas fa-map-marker-alt"><EnvironmentOutlined /></span>
-              <span class="text">Melapalayam, Tirunelveli</span>
-            </div>
+            <Flex class="place">
+             
+              <div class="text"> <span class="fas fa-map-marker-alt"><EnvironmentOutlined /> </span>7,Ambai Road Melapalayam</div>
+              <div className='text' style={{marginLeft:"30px"}}><p>Tirunelveli - 627005</p></div>
+            </Flex>
             <div class="phone">
               <span class="fas fa-phone-alt"><PhoneOutlined /></span>
-              <span class="text">+(91) 805 6707 579</span>
+              <span class="text">+(91) 744 8824 222</span>
             </div>
             <div class="email">
               <span class="fas fa-envelope"><MailOutlined /></span>

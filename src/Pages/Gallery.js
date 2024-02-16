@@ -37,45 +37,45 @@ const Gallery = () => {
     return (
         <div>
             <PageHeader page="Gallery" image={GalleryImg}/>
-            <div class="py-3 py-md-5 bg-light">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="mb-4">Our Products</h4>
+            <div className="py-3 py-md-5 bg-light">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h4 className="mb-4">Our Products</h4>
                         </div>
                         {productList?.map((data,index) => {
                             return(
 
-                                <div class="col-md-3" key={index}>
-                                    <div class="product-card">
-                                        <div class="product-card-img">
-                                            <label class="stock bg-success">In Stock</label>
+                                <div className="col-md-3" key={index}>
+                                    <div className="product-card">
+                                        <div className="product-card-img">
+                                            <label className="stock bg-success">In Stock</label>
                                             {/* <img src={AboutImg} alt="Laptop"/> */}
                                             <Image
 
                                                 src={data.image}
                                             />
                                         </div>
-                                        <div class="product-card-body">
-                                            <p class="product-brand">{data.category}</p>
-                                            <h5 class="product-name">
+                                        <div className="product-card-body">
+                                            <p className="product-brand">{data.category}</p>
+                                            <h5 className="product-name">
                                                 <a href="">
                                                     {data.name}
                                                 </a>
                                             </h5>
                                             {/* <div>
-                                        <span class="selling-price">$500</span>
-                                        <span class="original-price">$799</span>
+                                        <span className="selling-price">$500</span>
+                                        <span className="original-price">$799</span>
                                     </div> */}
-                                            <div class="mt-2">
-                                                <buttom href="" class="btn btn-primary">Add To Cart</buttom>
-                                                <buttom href="" class="btn btn-primary m-2"> <HeartOutlined /> </buttom>
-                                                <buttom href="" class="btn btn-primary"> View </buttom>
+                                            <div className="mt-2">
+                                                <buttom href="" className="btn btn-primary">Add To Cart</buttom>
+                                                <buttom href="" className="btn btn-primary m-2"> <HeartOutlined /> </buttom>
+                                                <buttom href="" className="btn btn-primary"> View </buttom>
                                             </div>
-                                            {/* <div class="btn-group mt-2" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn btn-primary">Left</button>
-                                        <button type="button" class="btn btn-primary">Middle</button>
-                                        <button type="button" class="btn btn-primary">Right</button>
+                                            {/* <div className="btn-group mt-2" role="group" aria-label="Basic example">
+                                        <button type="button" className="btn btn-primary">Left</button>
+                                        <button type="button" className="btn btn-primary">Middle</button>
+                                        <button type="button" className="btn btn-primary">Right</button>
                                     </div> */}
                                         </div>
                                     </div>

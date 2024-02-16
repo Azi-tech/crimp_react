@@ -27,42 +27,42 @@ const ContactUs = () => {
     return (
         <div>
             <PageHeader page="Contact Us" image={ContactImg} />
-            <div class="container mt-4 mb-4 shadow p-3 mb-5 bg-body rounded">
-                <div class=" container row">
+            <div className="container mt-4 mb-4 shadow p-3 mb-5 bg-body rounded">
+                <div className=" container row">
                     <div className={`col-md-4 text-center mt-4 pb-4 ${isMobileDevice ? 'border-bottom' : 'border-end'} border-3`}>
                         <div>
                             <EnvironmentFilled style={{ fontSize: '25px', color: '#08c' }}/>
                             
-                            <h5 class="text-primary">Address</h5>
-                            <div class="text-one">7,Ambai Road Melapalayam</div>
-                            <div class="text-two">Tirunelveli - 627005</div>
+                            <h5 className="text-primary">Address</h5>
+                            <div className="text-one">7,Ambai Road Melapalayam</div>
+                            <div className="text-two">Tirunelveli - 627005</div>
                         </div>
-                        <div class="mt-4">
+                        <div className="mt-4">
                             <PhoneFilled style={{ fontSize: '25px', color: '#08c' }} />
                             {/* <PhoneOutlined /> */}
-                            {/* <div class="topic">Phone</div> */}
-                            <h5 class="text-primary">Phone</h5>
-                            <div class="text-one">+(91) 744 8824 222</div>
-                            <div class="text-two">+(91) 744 8824 222</div>
+                            {/* <div className="topic">Phone</div> */}
+                            <h5 className="text-primary">Phone</h5>
+                            <div className="text-one">+(91) 744 8824 222</div>
+                            <div className="text-two">+(91) 744 8824 222</div>
                         </div>
-                        <div class="mt-4">
+                        <div className="mt-4">
                             <MailFilled style={{ fontSize: '25px', color: '#08c' }}/>
-                            {/* <div class="topic">Email</div> */}
-                            <h5 class="text-primary">Email</h5>
-                            <div class="text-one">jbhassim93@gmail.com</div>
-                            <div class="text-two">jbhassim93@gmail.com</div>
+                            {/* <div className="topic">Email</div> */}
+                            <h5 className="text-primary">Email</h5>
+                            <div className="text-one">jbhassim93@gmail.com</div>
+                            <div className="text-two">jbhassim93@gmail.com</div>
                         </div>
                     </div>
-                    <div class="col-md-8 mt-4 text-center">
-                        <h3 class="topic-text">Send us a message</h3>
+                    <div className="col-md-8 mt-4 text-center">
+                        <h3 className="topic-text">Send us a message</h3>
                         <p>If you have any work from me or any types of quries related to our work, you can send me message from here. It's my pleasure to help you.</p>
                         <Form
                             name="basic"
                             labelCol={{
-                                span: 8,
+                                span: isMobileDevice ? 24 : 8,
                             }}
                             wrapperCol={{
-                                span: 16,
+                                span: isMobileDevice ? 24 : 16,
                             }}
                             style={{
                                 maxWidth: 600,
@@ -114,7 +114,7 @@ const ContactUs = () => {
                             </Form.Item>
                             <Form.Item
                                 wrapperCol={{
-                                    offset: 8,
+                                    offset: isMobileDevice ? 0 : 8,
                                     span: 16,
                                 }}
                             >
