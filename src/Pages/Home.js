@@ -8,10 +8,8 @@ const Home = () => {
             <section className="py-3 py-md-5 py-xl-8">
                 <div className="container">
                     <div className="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
-                        <div className="col-12 col-lg-6 col-xl-5">
-                            <img className="img-fluid rounded" loading="lazy" src={imgAbout} alt="" />
-                        </div>
-                        <div className="col-12 col-lg-6 col-xl-7">
+                     
+                        <div className="col-12 col-lg-6 col-xl-7 border-left">
                             <div className="row justify-content-xl-center">
                                 <div className="col-12 col-xl-11">
                                     <h2 className="h1 mb-3">Who Are We?</h2>
@@ -49,6 +47,9 @@ const Home = () => {
                                     </div> */}
                                 </div>
                             </div>
+                        </div>
+                        <div className="col-12 col-lg-6 col-xl-5">
+                            <img className="img-fluid rounded" loading="lazy" src={imgAbout} alt="" />
                         </div>
                     </div>
                 </div>
