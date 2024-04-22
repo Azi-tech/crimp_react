@@ -47,7 +47,7 @@ const ProcessDiagram = () => {
               dot: <div className="rounded-circle" style={{ height: '30px', width: '30px', backgroundColor: 'red' }}>
                 <img src={item.dot} style={{ width: "100%" }} />
               </div>,
-              children: <div style={{ paddingTop: '-50px' }}>
+              children: <div>
                 <h4>{item.heading}</h4>
                 <p>
                   {item.content}
