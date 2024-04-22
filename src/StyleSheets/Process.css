@@ -1,0 +1,26 @@
+.pointStyle {
+
+}
+.process {
+    display: none;
+  }
+.step-process{
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .process {
+      display: block;
+    }
+    .step-process{
+        display: none;
+    }
+}
+
+:where(.css-dev-only-do-not-override-1qhpsh8).ant-steps.ant-steps-dot .ant-steps-item-tail{
+    top: 10.5px;
+}
+
+:where(.css-dev-only-do-not-override-1qhpsh8).ant-steps.ant-steps-dot .ant-steps-item-content{
+    margin-top: 30px;
+}

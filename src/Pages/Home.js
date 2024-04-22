@@ -1,5 +1,6 @@
 import CarouselComponent from "../components/Contents/Carousel";
 import imgAbout from '../assets/images/sss.jpg'
+import ProcessDiagram from "../components/Contents/ProcessDiagram";
 const Home = () => {
     return (
         <div>
@@ -9,6 +10,10 @@ const Home = () => {
                 <div className="container">
                     <div className="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
                      
+                        <div className="col-12 col-lg-6 col-xl-5">
+                          
+                            <img className="img-fluid rounded" loading="lazy" src={imgAbout} alt="" />
+                        </div>
                         <div className="col-12 col-lg-6 col-xl-7 border-left">
                             <div className="row justify-content-xl-center">
                                 <div className="col-12 col-xl-11">
@@ -48,9 +53,13 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 col-lg-6 col-xl-5">
-                            <img className="img-fluid rounded" loading="lazy" src={imgAbout} alt="" />
-                        </div>
+                    </div>
+                    <div className="text-center">
+                         <h2 className="h1 mt-4">What we do</h2>
+                         <div className="mt-4">
+
+                         <ProcessDiagram/>
+                         </div>
                     </div>
                 </div>
             </section>
