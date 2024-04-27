@@ -39,8 +39,8 @@ const isMobileDevice = width <= 768;
       path: '/about'
     },
     {
-      name: 'Gallery',
-      path: '/gallery'
+      name: 'Services',
+      path: '/services'
     },
     {
       name: 'Contact',

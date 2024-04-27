@@ -9,6 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from './components/Footers/Footer';
 import Gallery from './Pages/Gallery';
 import ContactUs from './Pages/ContactUs';
+import Services from './Pages/Services';
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
      <Route path="/about" element={<About />} />
      <Route path="/gallery" element={<Gallery />} />
      <Route path="/contact" element={<ContactUs />} />
+     <Route path="/services" element={<Services />} />
       {/* <Route path="/admin" render={(props) => <AdminLayout {...props} />} /> */}
       {/* <Route path="/user" render={(props) => <User {...props} />} /> */}
       {/* <Redirect from="/" to="/user/home" /> */}
